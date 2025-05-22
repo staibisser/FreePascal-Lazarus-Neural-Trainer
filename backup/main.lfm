@@ -1,0 +1,573 @@
+object Form1: TForm1
+  Left = -8
+  Height = 1100
+  Top = -8
+  Width = 1940
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Anchors = []
+  Caption = 'CAI-NEURAL-API'
+  ClientHeight = 1100
+  ClientWidth = 1940
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  SnapOptions.SnapFormTarget = False
+  SnapOptions.Distance = 0
+  LCLVersion = '3.6.0.0'
+  WindowState = wsMaximized
+  object TrainButton: TButton
+    Left = 8
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Train'
+    TabOrder = 0
+    OnClick = TrainButtonClick
+  end
+  object OptimizeButton: TButton
+    Left = 168
+    Height = 25
+    Top = 72
+    Width = 184
+    Caption = 'Optimize'
+    TabOrder = 1
+    OnClick = OptimizeButtonClick
+  end
+  object Chart1: TChart
+    Left = 520
+    Height = 952
+    Top = 8
+    Width = 1384
+    AxisList = <    
+      item
+        Visible = False
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelFont.Orientation = 900
+        Marks.Format = '%2:s'
+        Marks.LabelBrush.Style = bsClear
+        Marks.Source = DateTimeIntervalChartSource
+        Marks.Style = smsLabel
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Title.Alignment = taLeftJustify
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'TAChart'
+    )
+  end
+  object LoadCSVButton: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Load CSV'
+    TabOrder = 3
+    OnClick = LoadCSVButtonClick
+  end
+  object LogMemo: TMemo
+    Left = 6
+    Height = 342
+    Top = 616
+    Width = 469
+    Lines.Strings = (
+      'LogMemo'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 4
+  end
+  object NormalizeButton: TButton
+    Left = 8
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Normalize'
+    TabOrder = 5
+    OnClick = NormalizeButtonClick
+  end
+  object InputTrackBar1: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 152
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 6
+  end
+  object InputTrackBar2: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 192
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 7
+  end
+  object InputTrackBar3: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 232
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 8
+  end
+  object PredictionButton: TButton
+    Left = 168
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Prediction'
+    TabOrder = 9
+    OnClick = PredictionButtonClick
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 1038
+    Width = 1924
+    Panels = <>
+    SimpleText = 'Text Statusbar'
+  end
+  object OutputTrackBar1: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 296
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 11
+  end
+  object OutputTrackBar2: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 336
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 12
+  end
+  object OutputTrackBar3: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 376
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 13
+  end
+  object OutputTrackBar4: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 416
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 14
+  end
+  object OutputTrackBar5: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 456
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 15
+  end
+  object OutputTrackBar6: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 496
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 16
+    Visible = False
+  end
+  object OutputTrackBar7: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 534
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 17
+    Visible = False
+  end
+  object OutputTrackBar8: TTrackBar
+    Left = 118
+    Height = 25
+    Top = 574
+    Width = 250
+    Max = 100
+    Position = 0
+    TickMarks = tmBoth
+    TabOrder = 18
+    Visible = False
+  end
+  object InputTitelLabel: TLabel
+    Left = 8
+    Height = 21
+    Top = 128
+    Width = 48
+    Caption = 'Inputs'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object OutputTitelLabel: TLabel
+    Left = 8
+    Height = 21
+    Top = 272
+    Width = 61
+    Caption = 'Outputs'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object InputLabel1: TLabel
+    Left = 8
+    Height = 15
+    Top = 162
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Z-fluss'
+  end
+  object InputLabel2: TLabel
+    Left = 8
+    Height = 15
+    Top = 202
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'R-fluss'
+  end
+  object InputLabel3: TLabel
+    Left = 8
+    Height = 15
+    Top = 242
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'H-Temperatur'
+  end
+  object OutputLabel1: TLabel
+    Left = 8
+    Height = 15
+    Top = 306
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Out-A'
+  end
+  object OutputLabel2: TLabel
+    Left = 8
+    Height = 15
+    Top = 346
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'S-Temp'
+  end
+  object OutputLabel3: TLabel
+    Left = 8
+    Height = 15
+    Top = 386
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Vw-Temp'
+  end
+  object OutputLabel4: TLabel
+    Left = 8
+    Height = 15
+    Top = 426
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Ver-Temp'
+  end
+  object OutputLabel5: TLabel
+    Left = 8
+    Height = 15
+    Top = 466
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Out-B'
+  end
+  object OutputLabel6: TLabel
+    Left = 8
+    Height = 15
+    Top = 504
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Level-D'
+    Visible = False
+  end
+  object OutputLabel7: TLabel
+    Left = 8
+    Height = 15
+    Top = 544
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'S-Fluss'
+    Visible = False
+  end
+  object OutputLabel8: TLabel
+    Left = 8
+    Height = 15
+    Top = 584
+    Width = 100
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = 'Res'
+    Visible = False
+  end
+  object InputValueLabels1: TLabel
+    Left = 369
+    Height = 15
+    Top = 162
+    Width = 70
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object InputValueLabels2: TLabel
+    Left = 379
+    Height = 15
+    Top = 202
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0'
+  end
+  object InputValueLabels3: TLabel
+    Left = 379
+    Height = 15
+    Top = 242
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0'
+  end
+  object OutputValueLabels1: TLabel
+    Left = 379
+    Height = 15
+    Top = 306
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object OutputValueLabels2: TLabel
+    Left = 379
+    Height = 15
+    Top = 346
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object OutputValueLabels3: TLabel
+    Left = 379
+    Height = 15
+    Top = 386
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object OutputValueLabels4: TLabel
+    Left = 379
+    Height = 15
+    Top = 426
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object OutputValueLabels5: TLabel
+    Left = 379
+    Height = 15
+    Top = 466
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+  end
+  object OutputValueLabels6: TLabel
+    Left = 379
+    Height = 15
+    Top = 504
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+    Visible = False
+  end
+  object OutputValueLabels7: TLabel
+    Left = 379
+    Height = 15
+    Top = 544
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+    Visible = False
+  end
+  object OutputValueLabels8: TLabel
+    Left = 379
+    Height = 15
+    Top = 584
+    Width = 60
+    Alignment = taRightJustify
+    AutoSize = False
+    Caption = '0.0'
+    Visible = False
+  end
+  object ModelLadenButton: TButton
+    Left = 152
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Model laden'
+    TabOrder = 19
+    OnClick = ModelLadenButtonClick
+  end
+  object InputValueLabels5: TLabel
+    Left = 447
+    Height = 15
+    Top = 162
+    Width = 30
+    AutoSize = False
+    Caption = '[l/h]'
+  end
+  object InputValueLabels6: TLabel
+    Left = 447
+    Height = 15
+    Top = 202
+    Width = 30
+    AutoSize = False
+    Caption = '[l/h]'
+  end
+  object InputValueLabels7: TLabel
+    Left = 447
+    Height = 15
+    Top = 240
+    Width = 30
+    AutoSize = False
+    Caption = '[°C]'
+  end
+  object OutputValueLabels17: TLabel
+    Left = 444
+    Height = 15
+    Top = 306
+    Width = 30
+    AutoSize = False
+    Caption = '[l/h]'
+  end
+  object OutputValueLabels10: TLabel
+    Left = 444
+    Height = 15
+    Top = 346
+    Width = 30
+    AutoSize = False
+    Caption = '[°C]'
+  end
+  object OutputValueLabels11: TLabel
+    Left = 444
+    Height = 15
+    Top = 384
+    Width = 30
+    AutoSize = False
+    Caption = '[°C]'
+  end
+  object OutputValueLabels12: TLabel
+    Left = 447
+    Height = 15
+    Top = 426
+    Width = 30
+    AutoSize = False
+    Caption = '[°C]'
+  end
+  object OutputValueLabels13: TLabel
+    Left = 444
+    Height = 15
+    Top = 464
+    Width = 30
+    AutoSize = False
+    Caption = '[%]'
+  end
+  object OutputValueLabels14: TLabel
+    Left = 444
+    Height = 15
+    Top = 504
+    Width = 30
+    AutoSize = False
+    Caption = '[%]'
+    Visible = False
+  end
+  object OutputValueLabels15: TLabel
+    Left = 445
+    Height = 15
+    Top = 544
+    Width = 30
+    AutoSize = False
+    Caption = '[l/h]'
+    Visible = False
+  end
+  object OutputValueLabels16: TLabel
+    Left = 444
+    Height = 15
+    Top = 584
+    Width = 30
+    AutoSize = False
+    Caption = '[%]'
+    Visible = False
+  end
+  object OpenDialog: TOpenDialog
+    Left = 448
+    Top = 8
+  end
+  object SaveDialog: TSaveDialog
+    Left = 448
+    Top = 72
+  end
+  object ChartToolset1: TChartToolset
+    Left = 1091
+    Top = 137
+  end
+  object TimerChartUpdate: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = TimerChartUpdateTimer
+    Left = 1072
+    Top = 560
+  end
+  object DateTimeIntervalChartSource: TDateTimeIntervalChartSource
+    Left = 1500
+    Top = 282
+  end
+end

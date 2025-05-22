@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Release"/>
+    <Units>
+      <Unit>
+        <Filename Value="Anlage.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="60"/>
+        <UsageCount Value="109"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="220"/>
+        <CursorPos Y="1227"/>
+        <FoldState Value=" T3lA0B5 pjGk10{f2 pmJpI0{7]Aial10X1 pk3ke0:3]cPlC0B2 PmRQ0m"/>
+        <UsageCount Value="109"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neural-api\neural\neuralnetwork.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1631"/>
+        <CursorPos X="3" Y="1635"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="neural-api\neural\neuralvolume.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="669"/>
+        <CursorPos X="3" Y="617"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\fpcsrc\rtl\objpas\sysutils\datih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="166"/>
+        <CursorPos X="10" Y="180"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\fpcsrc\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="730"/>
+        <CursorPos X="15" Y="743"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tatransformations.pas"/>
+        <UnitName Value="TATransformations"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="119"/>
+        <CursorPos X="12" Y="150"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tachartaxis.pas"/>
+        <UnitName Value="TAChartAxis"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="7" Y="11"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tachartaxisutils.pas"/>
+        <UnitName Value="TAChartAxisUtils"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="39"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tatextelements.pas"/>
+        <UnitName Value="TATextElements"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="291"/>
+        <CursorPos X="35" Y="310"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tachartutils.pas"/>
+        <UnitName Value="TAChartUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="95"/>
+        <CursorPos X="52" Y="117"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\taseries.pas"/>
+        <UnitName Value="TASeries"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="429"/>
+        <CursorPos X="47" Y="461"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\components\tachart\tacustomseries.pas"/>
+        <UnitName Value="TACustomSeries"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="20" Y="12"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Lazarus_36\lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="686"/>
+        <CursorPos X="10" Y="705"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="15" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="1458" TopLine="206"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="16" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="17" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="4"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="668" Column="71" TopLine="189"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="889" Column="13" TopLine="782"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="925" Column="17" TopLine="896"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="930" Column="19" TopLine="901"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="936" Column="28" TopLine="907"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="947" Column="60" TopLine="912"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="446" Column="17" TopLine="206"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="464" Column="14" TopLine="208"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="479" Column="49" TopLine="449"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="480" Column="41" TopLine="450"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="506" Column="40" TopLine="476"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="447" Column="59" TopLine="199"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="559" Column="8" TopLine="530"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="568" Column="51" TopLine="538"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="569" Column="51" TopLine="539"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="570" Column="44" TopLine="540"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="589" Column="46" TopLine="564"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="452" Column="15" TopLine="445"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="482" Column="3" TopLine="451"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="533" Column="23" TopLine="525"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="214" Column="40" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="213" Column="40" TopLine="187"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="212" Column="40" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="211" Column="40" TopLine="185"/>
+      </Position>
+      <Position>
+        <Filename Value="main.pas"/>
+        <Caret Line="210" Column="40" TopLine="184"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\WINDOWS\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>
